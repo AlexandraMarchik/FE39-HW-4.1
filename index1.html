@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=`, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style1.css">
+   <title>Form</title>
+</head>
+
+<body>
+   <main class="main">
+      <section class="second-form">
+         <div class="second-container">
+            <div class="second-form__method">
+               <h2 class="form-tittle">Способ получения</h2>
+               <form action="#" method="get">
+                  <div><input placeholder="Город" type="text" name="usercity" class="form-section__top">
+                  </div>
+                  <div><select class="form-select" name="mail">
+                        <option value="mail.ru">Почта России</option>
+                        <option value="mail.euro">Европочта</option>
+                        <option value="mail.by">Белпочта</option>
+                     </select></div>
+                  <div class="user-adress">
+                     <input placeholder="Улица" type="text" name="userstreet" class="form-street">
+                     <input placeholder="Дом" type="text" name="userhouse" class="adress">
+                     <input placeholder="Квартира" type="text" name="userapartment" class="adress">
+                     <input placeholder="Индекс" type="text" name="index" class="adress">
+                  </div>
+                  <div><textarea class="form-comment" placeholder="Добавить комментарий" name="text"></textarea></div>
+                  <h2 class="form-tittle">Данные получателя</h2>
+                  <div class="form-name">
+                     <input placeholder="Фамилия" type="text" name="usersurname">
+                     <input placeholder="Имя" type="text" name="username">
+                     <input placeholder="Отчество" type="text" name="usersecname">
+                  </div>
+                  <div class="form-phone">
+                     <input placeholder="Номер телефона" type="tel" name="userphone" class="user-phone">
+                     <p>На эту почту вам придет письмо с составом
+                        заказа, а так же трэк-номер для его отслеживания</p>
+                  </div>
+                  <div class="email">
+                     <input placeholder="E-mail" type="email" name="usermail">
+                     <p>На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+                  </div>
+                  <div class="signature"><input class="custom-checkbox" checked type="checkbox" name="signature"
+                        id="signature">
+                     <label for="signature">Подписаться на рассылку новинок и акций</label>
+                  </div>
+
+
+
+                  <h2 class="form-tittle">Способ оплаты</h2>
+                  <div class="radio">
+                     <label class="custom-radio">
+                        <input type="radio" name="payment" value="cash">
+                        <span>Оплата при получении наличными или картой</span>
+                     </label>
+                  </div>
+                  <div class="radio">
+                     <label class="custom-radio">
+                        <input checked type="radio" name="payment" value="card">
+                        <span>Оплата при получении наличными или картой</span>
+                     </label>
+                  </div>
+
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+</body>
+
+</html>
