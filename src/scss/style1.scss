@@ -1,0 +1,255 @@
+@import "fonts.scss";
+
+@import "nullstyle.scss";
+
+$color_1:#BDBDBD;
+$color_2:#424242;
+
+%border{
+	height: 50px;
+	border: 1px solid $color_1;
+	border-radius: 83px;
+}
+%bdfocus{
+	border: 2px solid $color_2;
+}
+@mixin display ($D) {
+	display: $D;
+	
+}
+
+
+.main{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   color: $color_2;
+   .second-form {
+      width: 100%;
+      .second-container {
+         max-width: 692px;
+         margin: 0 auto;
+         .second-form__method{
+            & input::placeholder{
+            color: $color_1;
+            }
+            .form-tittle {
+               font-family: 'Montserrat-Semi';
+               font-style: normal;
+               font-weight: 600;
+               font-size: 28px;
+               line-height: 34px;
+               color: $color_2;
+               margin-bottom: 32px;
+            }
+            .form-section__top {
+               width: 520px;
+               @extend %border;
+               margin-bottom: 24px;
+            }
+            input:focus{
+               @extend %bdfocus;
+            }
+            input[type="text"] {
+               padding: 0px 24px;
+            }
+            .select-wrapper{
+               position: relative;
+               width: 520px;
+               &::after{
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  top: 35%;
+                  right: 24px;
+                  transform: translateY(-50%);
+                  background-image: url('../img/Group\ 50.svg');
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  pointer-events: none;
+               }
+               .form-select{
+                  @extend %border;
+                  font-size: 14px;
+                  line-height: 17px;
+                  margin-bottom: 24px;
+                  padding-left:24px;
+                  padding-right: 24px;
+                  color: $color_1;
+                  appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  width: 100%;
+                  & option{
+                     color: $color_1;
+                  }
+                  &:focus{
+                     @extend %bdfocus;
+                  }
+               }
+            }
+            .user-adress{
+               @include display (flex);
+               justify-content: space-between;
+               margin-bottom: 24px;
+               .form-street{
+                  width: 254px;
+                  @extend %border;
+               }
+               .adress{
+                  @extend %border;
+                  width: 130px;
+                  
+               }
+            }
+            .form-comment{
+               @extend %border;
+               width: 692px;
+               margin-bottom: 64px;
+               padding: 17px 24px;
+               resize: none;
+               overflow: hidden;
+               &::placeholder{
+                  color: $color_1;
+               }
+            }
+            .form-name{
+               @include display (flex);
+               justify-content: space-between;
+               margin-bottom: 24px;
+               & input{
+                  @extend %border;
+                  width: 220px;
+                  left: 150px;
+                  top: 785px;
+               }
+               & input:focus{
+                  @extend %bdfocus;
+               }
+            }
+            .form-phone{
+               margin-bottom: 27px;
+               .user-phone{
+                  @extend %border;
+                  width: 220px;
+                  padding: 0 24px;
+                  margin-bottom: 8px;
+               }
+            }
+            .email{
+               & input:focus{
+                  @extend %bdfocus;
+               }
+               & input{
+                  @extend %border;
+                  width: 456px;
+                  padding: 0 24px;
+                  margin-bottom: 8px;
+               }
+               & p{
+                  margin-bottom: 30px;
+               }
+            }
+            .signature {
+               margin-bottom: 69px;
+               input[type="checkbox"] {
+                  position: absolute;
+                  z-index: -1;
+                  opacity: 0;
+               }
+               .custom-checkbox{
+                  &+label:before {
+                     content: " ";
+                     @include display (inline-block);
+                     width: 30px;
+                     height: 30px;
+                     border: 1px solid rgba(151, 100, 100, 1);
+                     border-radius: 6px;
+                     margin-right: 15px;
+                     position: relative;
+                  }
+                  &+label {
+                     @include display (inline-flex);
+                     align-items: center;
+                     user-select: none;
+                  }
+                  &:checked + label::before {
+                     content: " ";
+                     @include display (inline-block);
+                     background-image: url('../img/akar-icons_check.svg');
+                     background-repeat: no-repeat;
+                     background-position:center;
+                  }
+               }
+            }
+            .radio{
+               &:last-child{
+               margin-bottom: 134px;
+            }
+               .custom-radio{
+                  &>input{
+                     position: absolute;
+                     z-index: -1;
+                     opacity: 0;
+                  }
+                  &>span {
+                     @include display (inline-flex);
+                     align-items: center;
+                     user-select: none;
+                  }
+                  &>span::before {
+                     content: '';
+                     @include display (inline-block);
+                     width: 31px;
+                     height: 31px;
+                     border: 1px solid rgba(151, 100, 100, 1);
+                     border-radius: 50%;
+                     margin-right: 15px;
+                     background-repeat: no-repeat;
+                     background-position: center center;
+                     background-size: 50% 50%;
+                  }
+                  &>input:checked+span::before {
+                     background-image: url("../img/Ellipse\ 14.svg");
+                     background-size: 19px 19px;
+                     background-position: center center;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{
+   "name": "fe39-hw-4.1",
+   "version": "1.0.0",
+   "source": "./src/index1.html",
+   "description": "HW-4.1 (form)",
+   "main": "index.js",
+   "scripts": {
+      "start": "parcel"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/AlexandraMarchik/FE39-HW-4.1.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/AlexandraMarchik/FE39-HW-4.1/issues"
+   },
+   "homepage": "https://github.com/AlexandraMarchik/FE39-HW-4.1#readme",
+   "devDependencies": {
+      "@parcel/transformer-sass": "^2.7.0",
+      "parcel": "^2.7.0",
+      "sass": "^1.55.0"
+   }
+}
